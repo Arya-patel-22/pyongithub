@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>PyScript Demo</title>
 
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+<head>
+    <title>PyScript Test</title>
+
+    <link rel="stylesheet"
+        href="https://pyscript.net/releases/2024.1.1/core.css">
+
+    <script type="module"
+        src="https://pyscript.net/releases/2024.1.1/core.js">
+    </script>
 </head>
 
 <body>
 
-<h1>Hello PyScript</h1>
+<h1>PyScript Working</h1>
 
 <py-script>
-print("Hello from Python!")
+from pyscript import display
+
+display("Hello from Python!")
+
+name = "Arya"
+
+display(f"Welcome {name}")
 </py-script>
 
 </body>
